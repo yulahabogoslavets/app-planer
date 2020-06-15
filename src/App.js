@@ -267,7 +267,7 @@ export default class App extends React.Component{
                 />
               </Form.Group>
 
-                <Button className="mt-3"
+                <Button className="mt-3" sm={12}
                         variant="outline-success"
                         onClick={this.addElement}>
                   Add
