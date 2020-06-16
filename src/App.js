@@ -236,11 +236,11 @@ export default class App extends React.Component{
     return(
         <Container fluid="md" className="bg-light">
           <Row className="justify-content-sm-center">
-              <h1>Einkaufsplanner</h1>
+              <h1 className="ml-3">Einkaufsplanner</h1>
           </Row>
 
-          <Form>
-            <Form.Row className="align-items-center">
+          <Form className="mb-3">
+            <Form.Row className="align-items-center ">
               <Form.Group as={Col} md={3}>
                 <Form.Label htmlFor="name">Name:</Form.Label>
                 <Form.Control type="text"
@@ -267,7 +267,7 @@ export default class App extends React.Component{
                 />
               </Form.Group>
 
-                <Button className="mt-3" sm={12}
+                <Button  className="mt-3" as={Col} sm={3}
                         variant="outline-success"
                         onClick={this.addElement}>
                   Add

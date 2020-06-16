@@ -9,7 +9,7 @@ export default function List(props){
     const listItems = props.product.map(item =>{
         return <Form key={item.key} className="bg-info pt-3" >
             <Form.Row>
-                <Col md={2} className="mb-1">
+                <Col md={2} className="mb-2">
                     <Form.Control type="text"
                            value={item.text}
                            id={item.key}
@@ -17,7 +17,7 @@ export default function List(props){
                     />
                 </Col>
 
-                <Col md={2} className="mb-1">
+                <Col md={2} className="mb-2">
                     <Form.Control type="number"
                            value={item.number}
                            id={item.key}
@@ -25,7 +25,7 @@ export default function List(props){
                     />
                 </Col>
 
-                <Col md={2} className="mb-1">
+                <Col md={2} className="mb-2">
                     <Form.Control type="date"
                            value={item.date}
                            id={item.key}

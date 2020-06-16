@@ -14,12 +14,12 @@ function NewList() {
         return (
             <Form key={elem.key} className="pb-2">
                 <Form.Row className="m-2">
-                    <Col xs={4} md={2}>
+                    <Col xs={5} md={2}>
                         <Form.Label className="pt-1">
                             Abgelaufenes Produkt:
                         </Form.Label>
                     </Col>
-                    <Col xs={8} md={3}>
+                    <Col xs={7} md={3}>
                         <Form.Control type="text"
                                       value={elem.text}
                                       disabled
